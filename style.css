@@ -1,0 +1,121 @@
+/* styles.css */
+
+/* Global styles */
+html {
+    box-sizing: border-box;
+}
+*{
+    box-sizing: inherit;
+    font-size: 20px;
+
+}
+
+/* Chat container */
+#chat-box {
+    background-color: #ded9d9;
+    border: 1px solid #003a97;
+    padding: 20px;
+    max-width: 100%;
+    margin: 20px auto;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/* Bot responses */
+.bot-response {
+    background-color: #c2ecfe;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    max-width: 100%;
+    border: 1px solid #98d1ff;
+}
+
+/* User input field */
+#user-input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    background-color: rgb(214, 249, 237);
+
+}
+
+/* Send button */
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-left:5px;
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    background-color: #005dc0;
+}
+
+
+/* Input fields for user details */
+input[type="text"],
+input[type="number"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+
+/* Responsive design */
+@media only screen and (max-width: 600px) {
+    #chat-box {
+        padding: 5px;
+    }
+    .bot-response, #user-input, button, input[type="text"], input[type="number"] {
+        padding: 8px;
+    }
+    button {
+        padding: 8px 10px;
+    }
+}
+
+
+
+/* Responsive design adjustments */
+@media only screen and (max-width: 768px) {
+    /* Adjustments for tablet devices */
+    #chat-box {
+        padding: 20px;
+    }
+    .bot-response, #user-input, button, input[type="text"], input[type="number"] {
+        padding: 10px;
+    }
+    button {
+        padding: 5px 15px !important;
+        margin: 5px; 
+    }
+    
+}
+
+@media only screen and (max-width: 1024px) {
+    /* Adjustments for small desktops */
+    #chat-box {
+        padding: 30px;
+    }
+    .bot-response, #user-input, button, input[type="text"], input[type="number"] {
+        padding: 12px;
+    }
+    button {
+        padding: 12px 14px;
+    }
+    
+}
+
+/* Ensure user input field is responsive */
+#user-input {
+    width: 100% !important; /* Full width */
+    max-width: none; /* Remove the max-width */
+}
+
